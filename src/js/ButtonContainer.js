@@ -58,10 +58,12 @@ export const ButtonContainer = () => {
       default:
         tag =  s;
     }
+
+    return tag;
   };
 
   const value = b => {
-    tag =  b === 'equals' ? '='
+    return  b === 'equals' ? '='
     : b === 'add' ? '+'
     : b === 'subtract' ? '-'
     : b === 'multiply' ? 'X'
