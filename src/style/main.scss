@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+}
+
+#root {
+    width: inherit;
+}
+
+#app {
+    border: 5px solid darkcyan;
+    color: floralwhite;
+    background-color: darkslategrey;
+    height: 400px;
+}
+
+#display, #formula {
+    text-align: right;
+    font-family: monospace;
+}
+
+#display {
+    height: 40px;
+}
+
+#formula {
+    height: 20px;
+}
+
+.calc-btn {
+    display: inline-block;
+    background-color: darkgrey;
+    color: floralwhite;
+    border: 1px solid darkslategrey;
+}
+
+#button-container {
+    display: grid;
+    grid-template-areas:
+    "ac ac mult div"
+    "seven eight nine add"
+    "four five six sub"
+    "one two three eq"
+    "zero zero dec eq";
+    height: calc(100% - 60px);
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#multiply, #divide, #add, #subtract {
+    background-color: lightgrey;
+}
+
+#multiply {
+    grid-area: mult;
+}
+
+#divide {
+    grid-area: div;
+}
+
+#add {
+    grid-area: add;
+}
+
+#subtract {
+    grid-area: sub;
+}
+
+#equals {
+    grid-area: eq;
+    background-color: lightblue;
+}
+
+#decimal {
+    grid-area: dec;
+}
+
+#clear {
+    grid-area: ac;
+    background-color: palevioletred;
+}
