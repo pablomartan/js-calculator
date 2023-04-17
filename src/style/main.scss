@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background: ghostwhite;
 }
 
 #root {
@@ -20,10 +21,13 @@ html, body {
 
 #display {
     height: 40px;
+    font-size: 24px;
 }
 
 #formula {
     height: 20px;
+    font-size: 18px;
+    color: wheat;
 }
 
 .calc-btn {
