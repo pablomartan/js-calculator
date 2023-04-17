@@ -71,8 +71,10 @@ export const calculatorSlice = createSlice({
           }
           break;
         case '=':
-          state.input = eval(output);
-          state.output += String('=' + state.input);
+          if (!state.output.includes('=') && state.output != '') {
+            state.input = eval(output);
+            state.output += String('=' + state.input);
+          }
       }
     }
   }
