@@ -7,10 +7,10 @@ export function Display() {
 
   return(
     <>
-      <div id='formula'>
+      <div id='formula' className='m-1 overflow-scroll'>
         {state.output}
       </div>
-      <div id='display' className='pt-1'>
+      <div id='display' className='m-1 pt-2 overflow-scroll'>
         {state.input}
       </div>
     </>

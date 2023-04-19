@@ -6,7 +6,7 @@ export function Button(props) {
   const dispatch = useDispatch();
 
   return(
-    <button className='calc-btn' id={props.id}
+    <button className='calc-btn m-1' id={props.id}
     onClick={e => dispatch(buttonPressed(e.target.value))} value={props.value}>
     {props.value}
     </button>

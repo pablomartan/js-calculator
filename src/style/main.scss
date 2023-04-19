@@ -1,6 +1,6 @@
 html, body {
     height: 100%;
-    background: ghostwhite;
+    background: #f2e6e7;
 }
 
 #root {
@@ -8,10 +8,11 @@ html, body {
 }
 
 #app {
-    border: 5px solid darkcyan;
+    border-radius: 10px;
     color: floralwhite;
-    background-color: darkslategrey;
-    height: 400px;
+    background-color: #424242;
+    width: fit-content;
+    max-width: 288px;
 }
 
 #display, #formula {
@@ -20,21 +21,26 @@ html, body {
 }
 
 #display {
-    height: 40px;
+    height: 50px;
     font-size: 24px;
 }
 
 #formula {
     height: 20px;
     font-size: 18px;
-    color: wheat;
+    color: lightgrey;
 }
 
 .calc-btn {
-    display: inline-block;
-    background-color: darkgrey;
-    color: floralwhite;
-    border: 1px solid darkslategrey;
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: seashell;
+  border: 2px solid #f2ebe6;
+
+  &:active {
+      background-color: #f2ebe6;
+  }
 }
 
 #button-container {
@@ -46,10 +52,12 @@ html, body {
     "one two three eq"
     "zero zero dec eq";
     height: calc(100% - 60px);
+    width: 100%;
 }
 
 #zero {
     grid-area: zero;
+    width: 126px;
 }
 
 #one {
@@ -88,8 +96,12 @@ html, body {
     grid-area: nine;
 }
 
-#multiply, #divide, #add, #subtract {
-    background-color: lightgrey;
+#multiply, #divide, #add, #subtract, #decimal{
+    background-color: whitesmoke;
+    &:active {
+        background-color: #e8e8e8;
+        border-color: #e8e8e8;
+    }
 }
 
 #multiply {
@@ -111,6 +123,12 @@ html, body {
 #equals {
     grid-area: eq;
     background-color: lightblue;
+    border: 2px solid #9ac1ce;
+    height: 126px;
+
+    &:active {
+        background-color: #9ac1ce;
+    }
 }
 
 #decimal {
@@ -120,4 +138,10 @@ html, body {
 #clear {
     grid-area: ac;
     background-color: palevioletred;
+    border: 2px solid #c66787;
+    width: 126px;
+
+    &:active {
+        background-color: #c66787;
+    }
 }
