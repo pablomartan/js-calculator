@@ -2,7 +2,8 @@
 A simple javascript calculator. Project for FCC FEnd Dev Libraries.
 
 ## Usage
-You can go to (this link)[] to try it. To modify it you'll have to clone this
+You can try it in the link that's on the project's description.
+To modify it you'll have to clone this
 repo by running the following command on your terminal `git clone
 https://github.com/pablomartan/js-calculator`. Once cloned, you'll have to
 enter the directory it was cloned to and run `npm i` to install the node
